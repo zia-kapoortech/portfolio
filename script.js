@@ -1,45 +1,23 @@
+window.scrollTo(0,0);
 import * as THREE from "three";
-
-
-
 const canvas = document.querySelector("#webgl");
-
-
-
 const scene = new THREE.Scene();
-
-
-
 const camera = new THREE.PerspectiveCamera(
 45,
 window.innerWidth / window.innerHeight,
 0.1,
 100
 );
-
-
 camera.position.z = 6;
-
-
-
 const renderer = new THREE.WebGLRenderer({
-
-canvas,
-
-alpha:true,
-
-antialias:true
-
+  canvas,
+  alpha:true,
+  antialias:true
 });
-
-
-
 renderer.setSize(
 window.innerWidth,
 window.innerHeight
 );
-
-
 renderer.setPixelRatio(
 window.devicePixelRatio
 );
