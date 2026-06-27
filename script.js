@@ -44,13 +44,13 @@ new THREE.IcosahedronGeometry(
 const material =
 new THREE.MeshPhysicalMaterial({
 
-color:"#c0392b",
+color:"#ff4b3e",
 
 wireframe:true,
 
 transparent:true,
 
-opacity:.55,
+opacity:.9,
 
 metalness:1,
 
